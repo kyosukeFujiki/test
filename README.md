@@ -26,6 +26,6 @@ console.log("aaa")
 var dc = document.getElementById('canvas').getContext('2d');
 ```
 
-``` python.py
-var dc = document.getElementById('canvas').getContext('2d');
+```python.py
+dc = document.getElementById('canvas').getContext('2d');
 ```
