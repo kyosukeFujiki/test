@@ -1,4 +1,4 @@
 # test
-```hoge.txt
-aaa
+```javascript:hoge.txt
+console.log("aaa")
 ```
