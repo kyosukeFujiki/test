@@ -1,7 +1,4 @@
-.code-block-header{
-    position: relative;
-}
-.code-block-header:before {
+.code-block-header {
     content: attr(pre_title);
     font-weight: bold;
     color: yellow;
