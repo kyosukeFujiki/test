@@ -1,4 +1,3 @@
-/*code-block-header*/
 .code-block-header{
     position: relative;
 }
