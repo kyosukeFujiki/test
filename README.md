@@ -1,4 +1,4 @@
 # test
-```javascript:hoge.txt
+``` javascript:hoge.txt
 console.log("aaa")
 ```
