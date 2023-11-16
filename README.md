@@ -1,8 +1,8 @@
 .code-block-header {
-    content: attr(pre_title);
-    font-weight: bold;
-    color: yellow;
-    background-color: gray;
+  content: attr(pre_title);
+  font-weight: bold;
+  color: yellow;
+  background-color: gray;
   font-size: 16px;
   padding: 2px 5px 0px 5px;
   position: absolute;
