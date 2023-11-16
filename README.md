@@ -5,8 +5,8 @@
 
 div タグ・Button タグ・Image タグを下記のように編集してください
 60行目らへん
-<h4>./app/src/pages/detail/[id].page.tsx</h4>
 
+#### ***./app/src/pages/detail/[id].page.tsx***
 ```tsx
 return (
   <>
