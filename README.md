@@ -1,3 +1,4 @@
+<style>
 .code-block-header {
   content: attr(pre_title);
   font-weight: bold;
@@ -9,6 +10,7 @@
   top: 0;
   left: 0;
 }
+</style>
 <pre class="code-block-header" pre_title="setup.py"><code class="language-python">
 from setuptools import setup
 setup()
