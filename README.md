@@ -1,10 +1,14 @@
 # test
-``` javascript:hoge.txt
-hoge.txt
+``` javascript:hoge.js
 console.log("aaa")
 ```
 ``` javascript:aaa.js
 var dc = document.getElementById('canvas').getContext('2d');
+```
+
+``` javascript:hoge.js
+# aaa
+console.log("aaa")
 ```
 
 ```python.py
