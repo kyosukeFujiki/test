@@ -2,7 +2,7 @@
 ``` javascript:hoge.txt
 console.log("aaa")
 ```
-``` javascript
+``` javascript:aaa.js
 var dc = document.getElementById('canvas').getContext('2d');
 ```
 
