@@ -1,3 +1,49 @@
+> [!WARNING]
+> aaa
+> bbb
+
+`likes`テーブルは、下記を追加します。
+* `id`
+* いいねをしたユーザーの`email`
+* 年表の`id`
+* `members`
+* `histories`
+
+さらに、`members`と`histories`テーブルには、`likes`を追加します。  
+上記のようにすることで、`members`と`histories`テーブルから、`likes`を取得できるようになります。
+
+```go
+...
+
+model members {
+  ...
+  likes likes[] // likesカラムをmembersテーブルに追加
+}
+
+model histories {
+  ...
+  likes likes[] // likesカラムをhistoriesテーブルに追加
+}
+
+model pvs {
+  ...
+}
+
+model tags {
+  ...
+}
+
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 一番最後の行に、likesテーブルを追加する ↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+model likes {
+  id        Int   @id @default(autoincrement())                             //いいねID
+  member_email String                                                       // 投稿者E-Mail
+  members   members? @relation(fields: [member_email], references: [email]) // membersテーブルと紐付け
+  history_id String                                                         // 年表ID
+  histories   histories? @relation(fields: [history_id], references: [id])  // historiesテーブルと紐付け
+}
+```
+
+
 ```stl
 solid cube_corner
   facet normal 0.0 -1.0 0.0
