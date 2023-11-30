@@ -1,3 +1,5 @@
+パスワードを聞かれますので、 ***`docker_password`*** と入力してください。  
+
 > [!WARNING]
 > aaa
 > bbb
